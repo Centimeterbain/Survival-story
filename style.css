@@ -1,0 +1,262 @@
+/* * {
+  border: solid 1px red;
+} */
+body,
+html {
+  background-color: black;
+  margin: 0;
+}
+.scroller {
+  height: 100vh;
+}
+
+.orange {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: url("https://centimeterbain.github.io/survivalWeb/bgpic/mon.png");
+  background-size: cover;
+}
+
+.story {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 10vw;
+  height: 40vh;
+}
+
+.title {
+  width: 50%;
+}
+
+.black {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #070707;
+}
+
+.blue {
+  height: 100vh;
+  background-color: black;
+}
+.word {
+  position: relative;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 50%;
+  font-size: 4vmin;
+  font-weight: 900;
+  text-align: center;
+  color: white;
+}
+
+.down {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+}
+
+.say {
+  margin: 0 auto 0 auto;
+  text-align: center;
+  width: 80%;
+  min-height: 50px;
+  z-index: 1;
+}
+.larrow {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.say:hover::after {
+  position: absolute;
+  left: 7.5vw;
+  bottom: 2vh;
+  z-index: 1;
+  color: #fff;
+  font-size: 0.8em;
+  background: #828183;
+  padding: 0px;
+  border-radius: 5px;
+  content: "點我去卡牌介紹\A( •̀ ω •́ )✧";
+  white-space: pre;
+}
+
+.fin {
+  margin: 0 auto 0 auto;
+  text-align: center;
+  width: 30%;
+  min-height: 50px;
+  z-index: 1;
+}
+.home {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.fin:hover::after {
+  position: absolute;
+  left: 50%;
+  bottom: -3.2vh;
+  transform: translate(-50%);
+  z-index: 1;
+  color: #fff;
+  font-size: 0.8em;
+  background: #828183;
+  padding: 0px;
+  border-radius: 5px;
+  content: "點我回到首頁\A( •̀ ω •́ )✧";
+  white-space: pre;
+}
+
+.card {
+  margin: 0 auto 0 auto;
+  text-align: center;
+  width: 80%;
+  min-height: 50px;
+  z-index: 1;
+}
+.rarrow {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.card:hover::after {
+  position: absolute;
+  right: 7.5vw;
+  bottom: 2vh;
+  z-index: 1;
+  color: #fff;
+  font-size: 0.8em;
+  background: #828183;
+  padding: 0px;
+  border-radius: 5px;
+  content: "點我去遊戲說明\A( •̀ ω •́ )✧";
+  white-space: pre;
+}
+
+.text-wrap {
+  position: relative;
+  overflow: hidden;
+  width: 450px;
+  height: 80vh;
+}
+
+.panel-text {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  font-weight: 800;
+  text-align: center;
+  background-color: #070707;
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.panel-text.blue-text {
+  color: white;
+}
+
+.panel-text.red-text {
+  color: #c1ac95;
+}
+
+.panel-text.purple-text {
+  color: #c19191;
+}
+
+.panel-text.orange-text {
+  color: #9aaf81;
+}
+
+.p-wrap {
+  position: relative;
+  overflow: hidden;
+  width: 450px;
+  height: 80vh;
+}
+
+.panel {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/5ed12171d9d512cb2feead83_5.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.panel._2 {
+  z-index: 1;
+  background-image: url("../images/5f5a5b3515c4dd0c2c455925_110642301_938622823267359_7859124022958180678_n201.jpg");
+}
+
+.panel.blue {
+  z-index: auto;
+  background-image: url("https://centimeterbain.github.io/survivalWeb/logo2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.panel.red {
+  z-index: auto;
+  background-color: red;
+  background-image: url("https://centimeterbain.github.io/survivalWeb/personleader.png");
+  background-size: cover;
+}
+
+.panel.orange {
+  z-index: auto;
+  background-color: #cf5d00;
+  background-image: url("https://centimeterbain.github.io/survivalWeb/plantleader.png");
+  background-size: cover;
+}
+
+.panel.purple {
+  z-index: auto;
+  background-color: #808;
+  background-image: url("https://centimeterbain.github.io/survivalWeb/animalleader.png");
+  background-size: cover;
+}
